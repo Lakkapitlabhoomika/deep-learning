@@ -75,7 +75,6 @@ model.add(Dropout(0.25))
 model.add(Flatten())
 model.add(Dense(512, activation="relu"))
 model.add(Dropout(0.25))
-model.add(Dense(1, activation="sigmoid"))
 
 model.add(Reshape((1, -1)))
 model.add(Bidirectional(LSTM(32, activation='tanh', return_sequences=True)))
